@@ -1,0 +1,171 @@
+.all {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-color: #f0f0f0;
+}
+
+
+.cate {
+    width: 20%;
+    background-color: #cc0101;
+    padding: 20px;
+    overflow: auto;
+}
+
+.post::-webkit-scrollbar,
+.cate::-webkit-scrollbar {
+    display: none;
+}
+
+.post {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    overflow: auto;
+}
+
+.cates {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.add {
+    background: #fff;
+    border: 1px solid #000;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.posts {
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.pen {
+    font-size: 13px;
+}
+
+.none {
+    display: none;
+}
+
+.p{
+    cursor: pointer;
+}
+
+
+
+.post{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fdiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fdiv1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.fdivc{
+    display: flex;
+    gap: 20px;
+}
+
+.fdiv2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input{
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 8px 10px;
+    height: 40px;
+    outline: none;
+}
+
+.textarea{
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 8px 10px;
+    height: 100px;
+    outline: none;
+    resize: vertical;
+}
+
+.bdiv{
+    display: flex;
+    gap: 20px;
+}
+
+.button{
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #cc0101;
+    font-size: 20px;
+}
+
+.button1{
+    border: none;
+    height: 40px;
+    width: 40px;
+    color: #cc0101;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #cc0101;
+    font-size: 20px;
+    margin: 5px 0 0 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.frame{
+    width: 100%;
+    height: 22.6rem;
+}
