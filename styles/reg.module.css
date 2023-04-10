@@ -1,0 +1,75 @@
+.all{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.imgdiv{
+    height: 6rem;
+    width: 15rem;
+    position: relative;
+}
+
+.formDiv{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.fdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.fdiv1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.fdiv2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #777;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.button{
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #cc0101;
+}

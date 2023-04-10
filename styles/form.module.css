@@ -1,0 +1,107 @@
+.all{
+    padding: 20px;
+    background-color: #f0f0f0;
+    height: calc(100vh -  4rem);
+    overflow: auto;
+}
+
+.none{
+    display: none;
+}
+
+.post{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+    margin: auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fdiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fdiv1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.fdivc{
+    display: flex;
+    gap: 20px;
+}
+
+.fdiv2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input{
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 8px 10px;
+    height: 40px;
+    outline: none;
+}
+
+.textarea{
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 8px 10px;
+    height: 400px;
+    outline: none;
+    resize: vertical;
+}
+
+.bdiv{
+    display: flex;
+    gap: 20px;
+}
+
+.bdiv1{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.button{
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #cc0101;
+    font-size: 20px;
+}
+
+.button:nth-child(2){
+    background-color: #0066ff;
+}
+
+.button1{
+    border: none;
+    height: 40px;
+    width: 40px;
+    color: #cc0101;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #cc0101;
+    font-size: 20px;
+    margin: 5px 0 0 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
