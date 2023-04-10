@@ -133,8 +133,8 @@ const Index = () => {
             <div>
                 <div className={pre === false ? style.all : style.none}>
                     <div className={style.post}>
-                        {getpost && getpost.map((post, index) => (
-                            <div>
+                        {getpost && getpost.map((post, Index) => (
+                            <div key={Index}>
                                 <form onSubmit={postStory} className={style.form}>
                                     <div className={style.fdiv}>
                                         <label>Title <span style={{ color: "red" }}>&#42;</span></label>
@@ -153,8 +153,8 @@ const Index = () => {
                                             <label>Category <span style={{ color: "red" }}>&#42;</span></label>
                                             <select className={style.input} onChange={e => setPcate(e.target.value)} defaultValue={post.cat_id}>
                                                 <option className={style.input}>-- Select Category --</option>
-                                                {getallcate && getallcate.map((post, index) => (
-                                                    <option value={post.cat_id} key={index}>{post.cat_name}</option>
+                                                {getallcate && getallcate.map((post, Index) => (
+                                                    <option value={post.cat_id} key={Index}>{post.cat_name}</option>
                                                 ))}
                                             </select>
                                         </div>

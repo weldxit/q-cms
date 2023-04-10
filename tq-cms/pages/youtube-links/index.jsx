@@ -6,7 +6,7 @@ import Header from '../../components/header'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPen } from '@fortawesome/free-solid-svg-icons'
 
-const index = () => {
+const Index = () => {
 
     const router = useRouter()
 
@@ -71,8 +71,8 @@ const index = () => {
                 <div className={style.cate}>
                     <div className={post === true ? style.cates : style.none}>
                         <button className={style.add} onClick={clickC}>+ Add YouTube</button>
-                        {getAllYt && getAllYt.map((post, index) => (
-                            <div className={style.posts} key={index} onClick={() => getYtById(post.yt_id)}>
+                        {getAllYt && getAllYt.map((post, Index) => (
+                            <div className={style.posts} key={Index} onClick={() => getYtById(post.yt_id)}>
                                 <p className={style.p}>{post.yt_desc}</p>
                             </div>
                         ))}
@@ -93,8 +93,8 @@ const index = () => {
                         </div>
                     </div>
                     <div className={c === true ? style.block : style.none} key={refreshKey}>
-                        {getYt && getYt.map((post, index) => (
-                            <div key={index}>
+                        {getYt && getYt.map((post, Index) => (
+                            <div key={Index}>
                                 <iframe className={style.frame} src={`https://www.youtube.com/embed/${codeGenerate(post.yt_desc)}?rel=0`} title="YouTube video player" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
                             </div>
                         ))}
@@ -105,4 +105,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

@@ -7,7 +7,7 @@ import Preview from '../../components/preview'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPen } from '@fortawesome/free-solid-svg-icons'
 
-const index = () => {
+const Index = () => {
 
     const router = useRouter()
 
@@ -66,8 +66,8 @@ const index = () => {
                 <div className={style.cate}>
                     <div className={post === true ? style.cates : style.none}>
                         <button className={style.add} onClick={() => router.push(`/mypost/add-post`)}>+ Add Post</button>
-                        {getallpost && getallpost.map((post, index) => (
-                            <div className={style.posts} key={index}>
+                        {getallpost && getallpost.map((post, Index) => (
+                            <div className={style.posts} key={Index}>
                                 <p className={style.p} onClick={() => getStoryById(post.post_id)}>{post.title}</p>
                                 <FontAwesomeIcon icon={faPen} className={style.pen} onClick={() => router.push(`/mypost/${post.post_id}`)}/>
                             </div>
@@ -94,4 +94,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

@@ -4,7 +4,7 @@ import style from '../styles/reg.module.css'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
-const index = () => {
+const Index = () => {
 
 
   const router = useRouter()
@@ -28,4 +28,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

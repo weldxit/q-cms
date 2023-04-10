@@ -6,7 +6,7 @@ import Header from '../../components/header'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPen } from '@fortawesome/free-solid-svg-icons'
 
-const index = () => {
+const Index = () => {
 
     const router = useRouter()
 
@@ -96,8 +96,8 @@ const index = () => {
                 <div className={style.cate}>
                     <div className={post === true ? style.cates : style.none}>
                         <button className={style.add} onClick={clickC}>+ Add Category</button>
-                        {getallcate && getallcate.map((post, index) => (
-                            <div className={style.posts} onClick={() => getCategoryById(post.cat_id)} key={index}>
+                        {getallcate && getallcate.map((post, Index) => (
+                            <div className={style.posts} onClick={() => getCategoryById(post.cat_id)} key={Index}>
                                 <p className={style.p}>{post.cat_name}</p>
                                 <FontAwesomeIcon icon={faPen} className={style.pen} />
                             </div>
@@ -123,8 +123,8 @@ const index = () => {
                         </div>
                     </div>
                     <div className={c === true ? style.block : style.none} key={refreshKey}>
-                        {getcate && getcate.map((post, index) => (
-                            <div key={index}>
+                        {getcate && getcate.map((post, Index) => (
+                            <div key={Index}>
                                 <form onSubmit={(e) => putCategory(e, post.cat_id)} className={style.form}>
                                     <div className={style.fdiv}>
                                         <label>Category Name <span style={{ color: "red" }}>&#42;</span></label>
@@ -147,4 +147,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

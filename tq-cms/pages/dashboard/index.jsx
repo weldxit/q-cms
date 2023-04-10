@@ -7,7 +7,7 @@ import { useState } from 'react'
 import axios from 'axios'
 
 
-const index = () => {
+const Index = () => {
     const router = useRouter();
 
     const [c1, setC1] = useState();
@@ -79,4 +79,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

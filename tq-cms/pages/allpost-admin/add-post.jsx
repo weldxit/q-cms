@@ -109,8 +109,6 @@ const Index = () => {
         setPdesc(val);
     }
 
-    console.log(pdesc)
-
     return (
         <Header>
             <div>
@@ -135,8 +133,8 @@ const Index = () => {
                                         <label>Category <span style={{ color: "red" }}>&#42;</span></label>
                                         <select className={style.input} onChange={e => setPcate(e.target.value)}>
                                             <option className={style.input}>-- Select Category --</option>
-                                            {getallcate && getallcate.map((post, index) => (
-                                                <option value={post.cat_id} key={index}>{post.cat_name}</option>
+                                            {getallcate && getallcate.map((post, Index) => (
+                                                <option value={post.cat_id} key={Index}>{post.cat_name}</option>
                                             ))}
                                         </select>
                                     </div>
